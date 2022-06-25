@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "yona-hanavi-users": {
+      "hosting": {
+        "appUsers": [
+          "yona-hanavi-users"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "yona-hanavi-users"
+  }
+}

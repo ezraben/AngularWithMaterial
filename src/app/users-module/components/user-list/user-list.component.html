@@ -1,0 +1,24 @@
+<app-user-item (newUserEvent)="addUser($event)"> </app-user-item>
+<ol id="allUsers">
+  <li [ngClass]="'c1'" *ngFor="let item of users; index as i">
+    <mat-card [ngClass]="'card'">
+      <div [ngClass]="'c2'" mat-card-title>User:</div>
+      <div mat-card-content>
+        <h2 [ngClass]="'c1'">
+          Name add: <span [ngClass]="'c2'">{{ item.userName }}</span
+          >, Age: <span [ngClass]="'c2'"> {{ item.age }}</span
+          >, Email: <span [ngClass]="'c2'"> {{ item.email }}</span>
+        </h2>
+
+        <button mat-flat-button color="warn" (click)="remove(i)">
+          Remove user
+        </button>
+      </div>
+    </mat-card>
+  </li>
+</ol>
+
+<button mat-raised-button color="primary" id="showUsersBtn">
+  show all users
+</button>
+<button mat-raised-button color="primary" id="hideUsers">hide users</button>

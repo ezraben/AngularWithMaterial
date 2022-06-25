@@ -1,0 +1,66 @@
+.top-h1 {
+  padding-top: 10px;
+  text-align: center;
+  margin: 10vh 0;
+}
+
+.main-container {
+  background-color: rgb(204, 212, 212);
+  height: 50vh;
+  border: 1px solid black;
+  box-shadow: 5px 5px 6px gray;
+  border-radius: 25px;
+  width: 50vw;
+  margin-bottom: 10vh;
+}
+
+.labels-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  margin: 0 auto;
+  padding: 10px;
+}
+.input {
+  border: 1px solid;
+  border-radius: 25px;
+  line-height: 1.5rem;
+}
+.btn-container {
+  display: flex;
+}
+.addBtn {
+  margin: auto;
+  margin-top: 10vh;
+}
+
+#successMsg {
+  display: none;
+  position: relative;
+}
+#closeSuccessMsg {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 2rem;
+}
+#closeSuccessMsg:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+.cardMsg {
+  background-color: #aaa7a7;
+  border: 1 px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 6px #404040;
+  color: red;
+  margin-bottom: 10vh;
+}
+.msg {
+  color: black;
+  font-size: 1.5 rem;
+}

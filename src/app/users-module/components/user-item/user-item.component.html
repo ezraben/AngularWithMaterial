@@ -1,0 +1,41 @@
+<h1 [ngClass]="'top-h1'">Add Users</h1>
+
+<div [ngClass]="'main-container'">
+  <div [ngClass]="'labels-container'">
+    <div [ngClass]="'field'">
+      <input type="text" class="input" placeholder="Enter Name" #inpt />
+    </div>
+
+    <div [ngClass]="'field'">
+      <input placeholder="enter Age" type="text" class="input" #ageInpt />
+    </div>
+
+    <div [ngClass]="'field'">
+      <input placeholder="Enter Email" type="text" class="input" #emailInpt />
+    </div>
+    <div [ngClass]="'btn-container'">
+      <button
+        [ngClass]="'addBtn'"
+        mat-raised-button
+        color="primary"
+        (click)="addUser(inpt.value, ageInpt.value, emailInpt.value)"
+        id="addUserBtn"
+      >
+        ADD
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="successMsg">
+  <mat-card [ngClass]="'cardMsg'">
+    <h2>yeyyy user added!</h2>
+    <p id="closeSuccessMsg">x</p>
+    <p>
+      Info recived as: <br />
+      user Name: <span [ngClass]="'msg'">{{ inpt.value }}</span> , <br />
+      user Age: <span [ngClass]="'msg'"> {{ ageInpt.value }}</span> , <br />
+      user Email: <span [ngClass]="'msg'"> {{ emailInpt.value }}</span>
+    </p>
+  </mat-card>
+</div>
